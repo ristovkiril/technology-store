@@ -1,0 +1,128 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.border-shadow {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* Default box shadow with white color */
+.box-shadow-default {
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Correct box shadow with green color */
+.box-shadow-correct {
+  box-shadow: 0px 1px 3px rgba(0, 255, 0, 0.3) !important;
+  background: rgba(0, 255, 0, 0.6) !important;
+}
+
+/* Error box shadow with red color */
+.box-shadow-error {
+  box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.3) !important;
+  background: rgba(255, 0, 0, 0.7) !important;
+}
+/* Error box shadow with red color */
+.box-shadow-selected {
+  box-shadow: 0px 1px 3px rgba(2, 223, 255, 0.3) !important;
+  background: rgba(2, 223, 255, 0.3) !important;
+}
+
+.choose-default {
+  border-bottom: 0.1rem solid rgba(255,255,255, 0.5) !important;
+  background: transparent !important;
+}
+.choose-correct {
+  border-bottom: 0.1rem solid rgba(0, 255, 0, 1) !important;
+  background: rgba(0,255,0,0.1) !important;
+}
+.choose-error {
+  border-bottom: 0.1rem solid rgba(255, 0, 0, 1) !important;
+  background: rgba(255,0,0,0.1) !important;
+}
+
+
+.input-default {
+  border: 0.1rem solid rgba(255,255,255, 0.5) !important;
+  background: transparent !important;
+}
+.input-correct {
+  border: 0.1rem solid rgba(0, 255, 0, 1) !important;
+  background: rgba(0,255,0,0.1) !important;
+}
+.input-error {
+  border: 0.1rem solid rgba(255, 0, 0, 1) !important;
+  background: rgba(255,0,0,0.1) !important;
+}
