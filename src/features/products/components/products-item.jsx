@@ -53,12 +53,15 @@ export const ProductsItem = ({product, index}) => {
     e?.stopPropagation();
     const isLiked = isProductLiked();
     console.log(isLiked, likes, product)
+    let newState = [];
     if (isLiked) {
-      const newState = likes?.filter(i => i?.id !== product?.id);
+      newState = likes?.filter(i => i?.id !== product?.id);
       dispatch({likes: newState})
     } else {
-      dispatch({likes: [...likes, product]})
+      newState = [...likes, product];
+      dispatch({likes: newState})
     }
+    localStorage.setItem("likes", JSON.stringify(newState));
   }
 
   const isProductLiked = () => {
