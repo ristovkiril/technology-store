@@ -23,8 +23,8 @@ export const NotificationModal = () => {
   return (
     <CustomModal open={open} handleClose={handleClose}>
       <Stack direction={"column"} gap={2} sx={style}>
-        <Typography variant={"h4"} color={"secondary"}>Hello Welcome Back!</Typography>
-        <Typography variant={"subtitle2"} color={"secondary"}>We are glad to see  you back.</Typography>
+        <Typography variant={"h4"} color={"secondary"}>Demo Store Project – Exploring New Features!</Typography>
+        <Typography variant={"subtitle2"} color={"secondary"}>This is a demo project for a store where I'm experimenting with some new ideas using Material UI. Stay tuned for exciting updates! 🚀</Typography>
 
         <Button onClick={handleClose} variant={"contained"} fullWidth>
           Thanks!
