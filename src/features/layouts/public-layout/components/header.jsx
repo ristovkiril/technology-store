@@ -1,5 +1,5 @@
 import {Badge, Button, IconButton, Stack, Toolbar} from "@mui/material";
-import logoImg from "@/assets/react.svg"
+import logoImg from "@/assets/technology-logo.png"
 import {IconHeart, IconShoppingCart} from "@tabler/icons-react";
 import {useAppContext} from "@/context/app-context.jsx";
 import {Link, useNavigate} from "react-router-dom";
@@ -13,11 +13,11 @@ export const Header = () => {
       <Toolbar variant={"regular"}
                sx={{position: "fixed", left: 0, right: 0, top: 0, zIndex: 2, bgcolor: "background.main"}}>
         <Button
-          color={"secondary"}
           startIcon={<img src={logoImg} alt={"MyStore"} height={25}/>}
           component={Link} to={"/products"}
+          sx={{color: "#302f2f", "&:hover": {color: "#272424"} }}
         >
-          MyStore
+          KR Store
         </Button>
 
         <Stack direction={"row"} gap={1} sx={{ml: "auto"}}>

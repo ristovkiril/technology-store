@@ -3,7 +3,7 @@ import {Outlet, useNavigate} from "react-router-dom";
 import {useEffect} from "react";
 import {Stack} from "@mui/material";
 import {HelmetTitle} from "@/shared/components/HelmetTitle.jsx";
-import logo from "@/assets/react.svg";
+import logo from "@/assets/technology-logo.png";
 
 
 export const UnAuthedLayout = () => {

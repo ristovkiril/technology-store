@@ -1,5 +1,5 @@
 import {Button, IconButton, Stack} from "@mui/material";
-import logo from "@/assets/react.svg";
+import logo from "@/assets/technology-logo.png";
 import {IconMenu} from "@tabler/icons-react";
 import {useSetAtom} from "jotai";
 import {SidebarDrawerState} from "@/features/layouts/auth-layout/atoms.js";
