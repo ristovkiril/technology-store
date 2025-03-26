@@ -43,6 +43,11 @@ export const lightTheme = createTheme({
       primary: '#31363F',
       secondary: '#555555', // Add secondary text color
     },
+    success: {
+      default: "#47bd2c",
+      main: "#47bd2c",
+      contrastText: "#fefefe"
+    }
   },
   typography: {
     allVariants: {

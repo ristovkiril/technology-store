@@ -11,6 +11,7 @@ import {ProfilePage} from "@/pages/(authed)/profile/page.jsx";
 import {ContactUsPage} from "@/pages/(authed)/contact-us/page.jsx";
 import {ProductsPage} from "@/pages/(public)/products/page.jsx";
 import {PublicLayout} from "@/pages/(public)/layout..jsx";
+import {ProductPage} from "@/pages/(public)/product/page.jsx";
 
 
 const router = createBrowserRouter(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
 
       <Route element={<PublicLayout/>}>
         <Route path="products" element={<ProductsPage/>}/>
+        <Route path="product/:id" element={<ProductPage/>}/>
       </Route>
       {/* (unauthed) */}
       <Route element={<UnAuthedLayout/>}>
