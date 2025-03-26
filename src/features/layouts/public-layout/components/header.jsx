@@ -2,8 +2,10 @@ import {Badge, Button, IconButton, Stack, Toolbar} from "@mui/material";
 import logoImg from "@/assets/react.svg"
 import {IconHeart, IconShoppingCart} from "@tabler/icons-react";
 import {useAppContext} from "@/context/app-context.jsx";
+import {Link, useNavigate} from "react-router-dom";
 
 export const Header = () => {
+  const navigate = useNavigate();
   const {state: {likes, cart}, dispatch} = useAppContext();
 
   return (
@@ -13,12 +15,13 @@ export const Header = () => {
         <Button
           color={"secondary"}
           startIcon={<img src={logoImg} alt={"MyStore"} height={25}/>}
+          component={Link} to={"/products"}
         >
           MyStore
         </Button>
 
         <Stack direction={"row"} gap={1} sx={{ml: "auto"}}>
-          <IconButton>
+          <IconButton onClick={() => likes?.length > 0 ? navigate("/favorites") : null}>
             <Badge badgeContent={likes?.length || 0} showZero color={"secondary"} size={"small"}>
               <IconHeart/>
             </Badge>

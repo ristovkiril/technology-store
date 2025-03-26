@@ -7,8 +7,10 @@ import {useNavigate} from "react-router-dom";
 const style = {
   cursor: "pointer",
   p: {xs: 2},
+  maxWidth: "calc(100% - 64px)",
+  width: "calc(100% - 32px)",
   "&:hover": {
-    transform: "scale(1.1)"
+    transform: {xs: "scale(1)", md: "scale(1.1)"}
   }
 }
 

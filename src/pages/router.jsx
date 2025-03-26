@@ -12,6 +12,7 @@ import {ContactUsPage} from "@/pages/(authed)/contact-us/page.jsx";
 import {ProductsPage} from "@/pages/(public)/products/page.jsx";
 import {PublicLayout} from "@/pages/(public)/layout..jsx";
 import {ProductPage} from "@/pages/(public)/product/page.jsx";
+import {FavoriteProductsPage} from "@/pages/(public)/favorite-products/page.jsx";
 
 
 const router = createBrowserRouter(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route index element={<AuthRedirect/>}/>
 
       <Route element={<PublicLayout/>}>
+        <Route path="favorites" element={<FavoriteProductsPage/>}/>
         <Route path="products" element={<ProductsPage/>}/>
         <Route path="product/:id" element={<ProductPage/>}/>
       </Route>
